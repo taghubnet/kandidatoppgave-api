@@ -15,7 +15,7 @@ GET     /users/<id>  - returner den spesifikke brukeren
 DELETE  /users/<id>  - slett den spesifikke brukeren
 ```
 
-### POST /users
+### POST `/users`
 
 Opprett bruker i databasen med følgende felter;
 
@@ -25,16 +25,16 @@ id, brukernavn, epost, passord
 
 Vi ønsker at brukernavn og epost skal være unike. Returner en feilmelding dersom noen forsøker å opprette en som finnes.
 
-## GET /users
+## GET `/users`
 
 Returner alle brukerne i database.
 
 
-## GET /users/<id>
+## GET `/users/<id>`
 
 Returner den spesifikke brukeren med id=<id>. Dersome den ikke finnes returner passende status kode.
 
-## DELETE /users/<id>
+## DELETE `/users/<id>`
 
 Slett den spesifikke brukeren med id=<id> fra databasen. Dersome den ikke finnes returner passende status kode.
 
